@@ -304,7 +304,6 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-gap: 24px;
 }
 
 .header__nav-2__btn {
@@ -356,6 +355,14 @@ button:hover {
   font-family: "Gilroy-Medium";
   font-size: 15px;
   line-height: 16px;
+}
+
+.header__nav-2__item {
+  margin-right: 24px;
+}
+
+.header__nav-2__item:last-child {
+  margin-right: 0;
 }
 
 .header__nav-2__link {
@@ -948,6 +955,7 @@ button:hover {
 
   #mobile-menu:checked ~ .header__nav .header__nav-2__item {
     text-align: center;
+    margin-right: 0;
   }
 
   #mobile-menu:checked ~ .header__nav .header__nav-2__link {
@@ -1086,7 +1094,6 @@ button:hover {
   }
 
   #mobile-menu:checked ~ .header__nav .header__nav-2__item {
-    -moz-text-align-last: left;
-         text-align-last: left;
+    text-align: left;
   }
 }
